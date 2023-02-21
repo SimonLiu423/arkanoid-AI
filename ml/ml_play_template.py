@@ -1,13 +1,14 @@
 """
 The template of the main script of the machine learning process
 """
-
+import os
 
 class MLPlay:
     def __init__(self,ai_name, *args, **kwargs):
         """
         Constructor
         """
+        os.environ["SDL_VIDEODRIVER"] = "dummy"
         print(ai_name)
 
     def update(self, scene_info, *args, **kwargs):
